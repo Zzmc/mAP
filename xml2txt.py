@@ -29,7 +29,7 @@ for file_ in xml_files:
                         temp_info.append(ymax)
             temp.append(temp_info)
     txt_file_name = file_.split(".")[0]+".txt"
-    ground_truth = open(".//ground-truth/"+txt_file_name, "wr")
+    ground_truth = open("./ground-truth/"+txt_file_name, "wr")
     for box_info in temp:
         for info in box_info:
             ground_truth.write(info)
